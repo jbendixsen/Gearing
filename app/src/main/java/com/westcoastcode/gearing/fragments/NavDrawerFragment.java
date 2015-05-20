@@ -1,4 +1,4 @@
-package com.westcoastcode.gearing;
+package com.westcoastcode.gearing.fragments;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -14,6 +14,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.westcoastcode.gearing.R;
+
 public class NavDrawerFragment extends Fragment {
 
     public static final String PREF_FILE_NAME = "FRAG_PREF";
@@ -26,7 +28,7 @@ public class NavDrawerFragment extends Fragment {
     private boolean mUserLearnedDrawer;
     private boolean mFromSavedInstanceState;
 
-    private RecyclerView mRecyclerView;
+    //private RecyclerView mRecyclerView;
 
     public NavDrawerFragment() {
         // Required empty public constructor
@@ -46,7 +48,7 @@ public class NavDrawerFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_nav_drawer, container, false);
-        mRecyclerView = (RecyclerView) view.findViewById(R.id.drawer_list);
+        //mRecyclerView = (RecyclerView) view.findViewById(R.id.drawer_list);
 
 
 
